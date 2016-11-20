@@ -4,7 +4,7 @@ map examples of different regions to render in DeepSeeWeb
 Installation
 -----------
 
-0. Be sure you have MDX2JSON(https://github.com/intersystems-ru/Cache-MDX2JSON) and DeepSeeWeb(https://github.com/intersystems-ru/DeepSeeWeb) installed.
+0. Be sure you have [MDX2JSON](https://github.com/intersystems-ru/Cache-MDX2JSON) and [DeepSeeWeb](https://github.com/intersystems-ru/DeepSeeWeb) installed.
 
 1. Install [CacheUpdater](https://github.com/intersystems-ru/CacheUpdater/) in the target Namespace.
 2. Run in the terminal:
