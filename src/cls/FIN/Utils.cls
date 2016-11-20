@@ -1,6 +1,13 @@
 Class FIN.Utils
 {
 
+ClassMethod Setup()
+
+{
+	do ..Populate()
+	do ##class(%DeepSee.Utils).%BuildCube("FinCube")
+}
+
 ClassMethod Populate()
 {
 	do $CLASSMETHOD("FIN.Area", "%KillExtent")
@@ -13,25 +20,25 @@ ClassMethod ImportXData(className As %String, xDataName As %String)
 {
 	#dim sc As %Status = $$$OK
 	set sc= $CLASSMETHOD(className, "%KillExtent")
-	
+
 	set itemsCount = 0
-	
+
 	try{
-	
+
 		if $$$ISERR(sc)
 		{
 			write !, $System.Status.DisplayError(sc)
 			$$$THROWONERROR(sc,sc)
 		}
-		
+
 		#dim stream As %Stream.Object = ##class(%Dictionary.CompiledXData).%OpenId("FIN.Utils"_"||"_xDataName).Data
 		#dim reader As %XML.Reader = ##class(%XML.Reader).%New()
 
 		set sc = reader.OpenStream(stream, "literal")
 		$$$THROWONERROR(sc,sc)
-		
+
 		do reader.Correlate($piece(className, ".", 2), className)
-		
+
 		while reader.Next(.obj, .sc)
 		{
 			if $$$ISERR(sc)
@@ -39,23 +46,23 @@ ClassMethod ImportXData(className As %String, xDataName As %String)
 				write !, $System.Status.DisplayError(sc)
 				$$$THROWONERROR(sc,sc)
 			}
-			
+
 			set sc = obj.%Save()
-			
+
 			if $$$ISERR(sc)
 			{
 				write !, $System.Status.DisplayError(sc)
 				$$$THROWONERROR(sc,sc)
 			}
-			
+
 			set obj = ""
 			set itemsCount = itemsCount + 1
-		}		
+		}
 	}
 	catch(ex){
 		w !, ex.Name_" "_ex.Location
 	}
-	
+
 	write !,"Import - "_itemsCount_" objects of class "_className
 }
 
@@ -5756,4 +5763,3 @@ XData ParameterXData
 }
 
 }
-
