@@ -1,6 +1,7 @@
 Class FIN.Area Extends (%Persistent, %XML.Adaptor)
 {
 
+/// Name of the Region
 Property Name As %String(MAXLEN = 500) [ Required ];
 
 /// Guid for polygons in js file
@@ -36,4 +37,3 @@ Storage Default
 }
 
 }
-

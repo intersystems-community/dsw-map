@@ -3,7 +3,7 @@ Class RF.SAKH.Region Extends %Persistent
 {
 
 Property Name As %String(MAXLEN = 500) [ Required ];
-
+/// population property
 Property Population As %Integer;
 
 ClassMethod Populate()
@@ -40,4 +40,3 @@ Storage Default
 }
 
 }
-
