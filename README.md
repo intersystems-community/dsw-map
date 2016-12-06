@@ -13,6 +13,22 @@ Installation
 ```
 It will download classes and dfi from this repo and compiles it. JS files will be placed in .../CSP/Namespace folder.
 
+3. For the map of USA initialization run:
+```
+d ##class(FIN.Utils).Init()
+
+The map of USA
+--------------
+The map of USA example renders data vs States and Counties and consists of two dashboards: 
+1. Population, Area, Density
+![Population](https://dl.dropboxusercontent.com/u/25822386/InterSystems/Population.png)
+2. 2016 Elections Results
+![Elections](https://dl.dropboxusercontent.com/u/25822386/InterSystems/Elections.png)
+
+
+
+The map of Finlad
+-----------------
 
 3. For the map of Finland Run:
 ```
