@@ -1,11 +1,11 @@
-Class FIN.Utils
+Class RF.SAKH.Utils
 {
 
 ClassMethod Setup()
 
 {
 	do ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("FinCube")
+	do ##class(%DeepSee.Utils).%BuildCube("SAKHCube")
 }
 
 ClassMethod Populate()
