@@ -1,4 +1,4 @@
-///
+/// 
 Class USA.BI.USCube Extends %DeepSee.CubeDefinition [ DependsOn = USA.Region, ProcedureBlock ]
 {
 
@@ -105,3 +105,4 @@ ClassMethod TermListSetup()
 Parameter DOMAIN;
 
 }
+

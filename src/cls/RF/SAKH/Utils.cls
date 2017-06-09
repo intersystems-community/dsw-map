@@ -2,7 +2,6 @@ Class RF.SAKH.Utils
 {
 
 ClassMethod Setup()
-
 {
 	do ..Populate()
 	do ##class(%DeepSee.Utils).%BuildCube("SAKHCube")
@@ -21,3 +20,4 @@ ClassMethod Populate()
 }
 
 }
+

@@ -2,7 +2,6 @@ Class FIN.Utils
 {
 
 ClassMethod Setup()
-
 {
 	do ..Populate()
 	do ##class(%DeepSee.Utils).%BuildCube("FinCube")
@@ -5763,3 +5762,4 @@ XData ParameterXData
 }
 
 }
+
