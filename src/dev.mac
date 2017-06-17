@@ -1,0 +1,3 @@
+// classes release export
+s list="CZ*.CLS,FIN*.CLS,RF*.CLS,RSA*.CLS,SE*.CLS,USA*.CLS,World*.CLS,*.DFI"
+D $System.OBJ.Export(list,"dsw-map-release"_$tr($zd($h,3),"-","")_".xml")

@@ -1,7 +1,7 @@
 Class SE.Utils
 {
 
-ClassMethod setup()
+ClassMethod Setup()
 {
 	do ..Populate()
 	do ##class(%DeepSee.Utils).%BuildCube("SECube")

@@ -1,7 +1,7 @@
 Class CZ.Utils
 {
 
-ClassMethod setup()
+ClassMethod Setup()
 {
 	do ..Populate()
 	do ##class(%DeepSee.Utils).%BuildCube("CZCube")

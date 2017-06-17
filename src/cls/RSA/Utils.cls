@@ -1,7 +1,7 @@
 Class RSA.Utils
 {
 
-ClassMethod setup()
+ClassMethod Setup()
 {
 	do ..Populate()
 	do ##class(%DeepSee.Utils).%BuildCube("RSACube")
