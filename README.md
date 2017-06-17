@@ -6,34 +6,14 @@ Installation
 
 0. Be sure you have [MDX2JSON](https://github.com/intersystems-ru/Cache-MDX2JSON) and [DeepSeeWeb](https://github.com/intersystems-ru/DeepSeeWeb) installed.
 
-1. Install [CacheUpdater](https://github.com/intersystems-ru/CacheUpdater/) in the target Namespace.
-2. Run in the terminal:
+1. Download [release.xml](https://github.com/intersystems-ru/dsw-map/releases/) file and import it into a target Namespace.
+2. To setup all the maps run in the terminal:
 ```
-    d ##class(CacheUpdater.Task).Update("intersystems-ru","dsw-map")
+    d ##class(DSWMap.Utils).SetupAll()
 ```
-It will download classes and dfi from this repo and compiles it. JS files will be placed in .../CSP/Namespace folder.
-
-3. For the map of USA initialization run:
+Or run following to setup special map only:
 ```
-d ##class(FIN.Utils).Init()
-
-The map of USA
---------------
-The map of USA example renders data vs States and Counties and consists of two dashboards: 
-1. Population, Area, Density
-![Population](https://dl.dropboxusercontent.com/u/25822386/InterSystems/Population.png)
-2. 2016 Elections Results
-![Elections](https://dl.dropboxusercontent.com/u/25822386/InterSystems/Elections.png)
-
-
-
-The map of Finlad
------------------
-
-3. For the map of Finland Run:
+    d ##class([MapName].Utils).Setup()
 ```
-d ##class(FIN.Utils).Setup()
-```
-4. Get the working map of Finland on the URL:  yourserver:port/sw/index.html#/d/FIN/FinMap.dashboard?ns=Namespace.
-
-![Finland](https://dl.dropboxusercontent.com/u/25822386/InterSystems/Finland1.png)
+3. Download [polygons.zip](https://github.com/intersystems-ru/dsw-map/releases/) and place polygons files in /csp/yourtargetnamespace.
+4. Open yourserver/dsw/ in a target namespace and get the maps.
