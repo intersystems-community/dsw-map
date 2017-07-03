@@ -4,6 +4,7 @@ Class RF.KHAB.Utils
 ClassMethod setup() As %Status
 {
 	set sc = ..Populate()
+	do ##class(%DeepSee.Utils).%BuildCube("KHABCube")
 	quit sc
 }
 
