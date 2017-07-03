@@ -1,11 +1,13 @@
-Class DSWMap.Utils {
+Class DSWMap.Utils
+{
 
-ClassMethod SetupAll() {
+ClassMethod SetupAll()
+{
 
     for map="CZ","FIN","RSA","SE","RF.SAKH","USA" {
         do $CLASSMETHOD(map_".Utils", "Setup")
         }
-    
 }
 
 }
+
