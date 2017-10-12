@@ -1,6 +1,10 @@
 # dsw-map
 map examples of different regions to render in DeepSeeWeb
 
+Non issue
+-----------
+If you are using the local host as the server, then replace **localhost** with IP **127.0.0.1** to avoid an error.
+
 Installation
 -----------
 
