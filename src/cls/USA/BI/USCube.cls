@@ -72,8 +72,8 @@ ClassMethod GetValue(guid, type) As %Integer
 	//b "L"
 	//type=1 - population
 	//type=2 - area
-  // type=4 - Trump
-  // type=5 - Clinton
+  	// type=4 - Trump
+  	// type=5 - Clinton
 	// density
 	s region=##class(USA.Region).%OpenId(guid)
 	if $IsObject(region) & type<4 {
