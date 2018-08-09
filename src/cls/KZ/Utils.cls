@@ -72,74 +72,74 @@ XData RegionXData
 {
 <RegionXData>
     <Region>
-        <Name>Алматы облысы,Алматинская область</Name>
+        <Name>Алматинская область</Name>
         <Guid>KAZ.1_1</Guid>
-        <DataUrl>Алматы облысы,Алматинская область</DataUrl>
+        <DataUrl>Алматинская область</DataUrl>
     </Region>
     <Region>
-        <Name>Ақмола облысы,Акмолинская область</Name>
+        <Name>Акмолинская область</Name>
         <Guid>KAZ.2_1</Guid>
-        <DataUrl>Ақмола облысы,Акмолинская область</DataUrl>
+        <DataUrl>Акмолинская область</DataUrl>
     </Region>
     <Region>
-        <Name>Ақтөбе облысы,Актюбинская область</Name>
+        <Name>Актюбинская область</Name>
         <Guid>KAZ.3_1</Guid>
-        <DataUrl>Ақтөбе облысы,Актюбинская область</DataUrl>
+        <DataUrl>Актюбинская область</DataUrl>
     </Region>
     <Region>
-        <Name>Атырау облысы,Атырауская область</Name>
+        <Name>Атырауская область</Name>
         <Guid>KAZ.4_1</Guid>
-        <DataUrl>Атырау облысы,Атырауская область</DataUrl>
+        <DataUrl>Атырауская область</DataUrl>
     </Region>
     <Region>
-        <Name>Shyǵys Qazaqstan оblysy,Восточно-Казахстанская область</Name>
+        <Name>Восточно-Казахстанская область</Name>
         <Guid>KAZ.5_1</Guid>
-        <DataUrl>Shyǵys Qazaqstan оblysy,Восточно-Казахстанская область</DataUrl>
+        <DataUrl>Восточно-Казахстанская область</DataUrl>
     </Region>
     <Region>
-        <Name>Маңғыстау облысы,Мангистауская область ,ماڭعىستاۋ وبلىسى</Name>
+        <Name>Мангистауская область</Name>
         <Guid>KAZ.6_1</Guid>
-        <DataUrl>Маңғыстау облысы,Мангистауская область ,ماڭعىستاۋ وبلىسى</DataUrl>
+        <DataUrl>Мангистауская область</DataUrl>
     </Region>
     <Region>
-        <Name>Soltústik Qazaqstan оblysy,Северо-Казахстанская область</Name>
+        <Name>Северо-Казахстанская область</Name>
         <Guid>KAZ.7_1</Guid>
-        <DataUrl>Soltústik Qazaqstan оblysy,Северо-Казахстанская область</DataUrl>
+        <DataUrl>Северо-Казахстанская область</DataUrl>
     </Region>
     <Region>
-        <Name>Pavlodar oblysy,Павлодарская область</Name>
+        <Name>Павлодарская область</Name>
         <Guid>KAZ.8_1</Guid>
-        <DataUrl>Pavlodar oblysy,Павлодарская область</DataUrl>
+        <DataUrl>Павлодарская область</DataUrl>
     </Region>
     <Region>
-        <Name>Қарағанды облысы,Карагандинская область</Name>
+        <Name>Карагандинская область</Name>
         <Guid>KAZ.9_1</Guid>
-        <DataUrl>Қарағанды облысы,Карагандинская область</DataUrl>
+        <DataUrl>Карагандинская область</DataUrl>
     </Region>
     <Region>
-        <Name>Qostanai' oblysy,Костанайская область</Name>
+        <Name>Костанайская область</Name>
         <Guid>KAZ.10_1</Guid>
-        <DataUrl>Qostanai' oblysy,Костанайская область</DataUrl>
+        <DataUrl>Костанайская область</DataUrl>
     </Region>
     <Region>
-        <Name>Қызылорда облысы ,Кызылординская область</Name>
+        <Name>Кызылординская область</Name>
         <Guid>KAZ.11_1</Guid>
-        <DataUrl>Қызылорда облысы ,Кызылординская область</DataUrl>
+        <DataUrl>Кызылординская область</DataUrl>
     </Region>
     <Region>
-        <Name>Ońtústik Qazaqstan oblysy,Южно-Казахстанская область</Name>
+        <Name>Южно-Казахстанская область</Name>
         <Guid>KAZ.12_1</Guid>
-        <DataUrl>Ońtústik Qazaqstan oblysy,Южно-Казахстанская область</DataUrl>
+        <DataUrl>Южно-Казахстанская область</DataUrl>
     </Region>
     <Region>
-        <Name>Батыс Қазақстан облысы,Западно-Казахстанская область</Name>
+        <Name>Западно-Казахстанская область</Name>
         <Guid>KAZ.13_1</Guid>
-        <DataUrl>Батыс Қазақстан облысы,Западно-Казахстанская область</DataUrl>
+        <DataUrl>Западно-Казахстанская область</DataUrl>
     </Region>
     <Region>
-        <Name>Жамбыл облысы,Жамбылская область</Name>
+        <Name>Жамбылская область</Name>
         <Guid>KAZ.14_1</Guid>
-        <DataUrl>Жамбыл облысы,Жамбылская область</DataUrl>
+        <DataUrl>Жамбылская область</DataUrl>
     </Region>
     <Region>
         <Name>Аксуский район</Name>

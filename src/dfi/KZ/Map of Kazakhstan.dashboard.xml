@@ -3,6 +3,16 @@
 <Document name="KZ-Map of Kazakhstan.dashboard.DFI">
 <dashboard xmlns="http://www.intersystems.com/deepsee/library" name="Map of Kazakhstan" folderName="KZ" title="Map of Kazakhstan" description="" keywords="" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2018-05-13T20:42:33.144Z" createdBy="_SYSTEM" category="" bookCover="" scheme="" worklistCount="2" snapTo="true" snapGrid="true" gridRows="10" gridCols="10" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
   <widget name="kzpolygons" type="map" subtype="map" subtypeClass="" title="" dataSource="KZ/Population Map.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="applyFilter" target="Виджет2" targetProperty="[ParentRegion].[H1].[Region]" location="click" type="auto" controlClass="" label="District" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <property name="latitude">48.18</property>
+    <property name="longitude">67.129</property>
+    <property name="zoom">4</property>
+  </widget>
+  <widget name="Виджет2" type="pivot" subtype="pivot" subtypeClass="lineChart" title="" dataSource="KZ/Population Map Mini Dist.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="4" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+  </widget>
+  <widget name="Виджет3" type="pivot" subtype="pieChart" subtypeClass="pieChart" title="" dataSource="" dataLink="Виджет2" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="4" homeColL="0" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
   </widget>
 </dashboard>
 </Document></Export>
