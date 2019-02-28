@@ -1,7 +1,7 @@
 # dsw-map
 
 [![Gitter](https://img.shields.io/badge/chat-on%20telegram-blue.svg)](https://t.me/joinchat/FoZ4M0rd1_WFij2rqvUR2A)
-[![Gitter](https://img.shields.io/badge/demo-server-green.svg)](http://37.139.6.217:57773/dsw/index.html)
+[![Gitter](https://img.shields.io/badge/demo-server-green.svg)](http://37.139.6.217:52774/dsw/index.html#!/?ns=dswmap)
 
 map examples of different regions to render in DeepSeeWeb
 
