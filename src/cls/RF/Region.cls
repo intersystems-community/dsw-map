@@ -117,7 +117,7 @@ Storage Default
 <IdLocation>^RF.RegionD</IdLocation>
 <IndexLocation>^RF.RegionI</IndexLocation>
 <StreamLocation>^RF.RegionS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

@@ -25,7 +25,7 @@ Storage Default
 <IdLocation>^KZ.ParameterD</IdLocation>
 <IndexLocation>^KZ.ParameterI</IndexLocation>
 <StreamLocation>^KZ.ParameterS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

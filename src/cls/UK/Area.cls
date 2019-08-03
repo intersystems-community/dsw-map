@@ -33,7 +33,7 @@ Storage Default
 <IdLocation>^UK.AreaD</IdLocation>
 <IndexLocation>^UK.AreaI</IndexLocation>
 <StreamLocation>^UK.AreaS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

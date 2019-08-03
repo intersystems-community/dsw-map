@@ -35,7 +35,7 @@ Storage Default
 <IdLocation>^RF.ParameterValueD</IdLocation>
 <IndexLocation>^RF.ParameterValueI</IndexLocation>
 <StreamLocation>^RF.ParameterValueS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

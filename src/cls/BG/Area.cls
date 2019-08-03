@@ -1,4 +1,4 @@
-Class UA.Area Extends (%Persistent, %XML.Adaptor)
+Class BG.Area Extends (%Persistent, %XML.Adaptor)
 {
 
 /// Name of the Region
@@ -28,11 +28,11 @@ Storage Default
 <Value>DataUrl</Value>
 </Value>
 </Data>
-<DataLocation>^UA.AreaD</DataLocation>
+<DataLocation>^BG.AreaD</DataLocation>
 <DefaultData>AreaDefaultData</DefaultData>
-<IdLocation>^UA.AreaD</IdLocation>
-<IndexLocation>^UA.AreaI</IndexLocation>
-<StreamLocation>^UA.AreaS</StreamLocation>
+<IdLocation>^BG.AreaD</IdLocation>
+<IndexLocation>^BG.AreaI</IndexLocation>
+<StreamLocation>^BG.AreaS</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 

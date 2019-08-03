@@ -112,7 +112,7 @@ Storage Default
 <IdLocation>^USA.BordersD</IdLocation>
 <IndexLocation>^USA.BordersI</IndexLocation>
 <StreamLocation>^USA.BordersS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

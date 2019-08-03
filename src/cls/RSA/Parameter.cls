@@ -25,7 +25,7 @@ Storage Default
 <IdLocation>^RSA.ParameterD</IdLocation>
 <IndexLocation>^RSA.ParameterI</IndexLocation>
 <StreamLocation>^RSA.ParameterS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

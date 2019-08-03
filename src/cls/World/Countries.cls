@@ -3,6 +3,7 @@ Class World.Countries Extends %Persistent
 {
 
 Property Name As %String(MAXLEN = 500) [ Required ];
+
 /// population property
 Property Population As %Integer;
 
@@ -19,4 +20,26 @@ ClassMethod Populate()
 	 }
 }
 
+Storage Default
+{
+<Data name="CountriesDefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>Name</Value>
+</Value>
+<Value name="3">
+<Value>Population</Value>
+</Value>
+</Data>
+<DataLocation>^World.CountriesD</DataLocation>
+<DefaultData>CountriesDefaultData</DefaultData>
+<IdLocation>^World.CountriesD</IdLocation>
+<IndexLocation>^World.CountriesI</IndexLocation>
+<StreamLocation>^World.CountriesS</StreamLocation>
+<Type>%Storage.Persistent</Type>
 }
+
+}
+

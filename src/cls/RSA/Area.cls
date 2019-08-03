@@ -33,7 +33,7 @@ Storage Default
 <IdLocation>^RSA.AreaD</IdLocation>
 <IndexLocation>^RSA.AreaI</IndexLocation>
 <StreamLocation>^RSA.AreaS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

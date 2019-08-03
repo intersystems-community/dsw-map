@@ -33,7 +33,7 @@ Storage Default
 <IdLocation>^KZ.AreaD</IdLocation>
 <IndexLocation>^KZ.AreaI</IndexLocation>
 <StreamLocation>^KZ.AreaS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

@@ -1,4 +1,4 @@
-Class KZ.Region Extends Area
+Class BG.Region Extends Area
 {
 
 /// Parent of region. For state=null, for county=state

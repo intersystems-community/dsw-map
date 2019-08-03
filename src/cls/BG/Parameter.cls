@@ -1,4 +1,4 @@
-Class UA.Parameter Extends (%Persistent, %XML.Adaptor)
+Class BG.Parameter Extends (%Persistent, %XML.Adaptor)
 {
 
 Property Name As %String;
@@ -20,11 +20,11 @@ Storage Default
 <Value>UnitName</Value>
 </Value>
 </Data>
-<DataLocation>^UA.ParameterD</DataLocation>
+<DataLocation>^BG.ParameterD</DataLocation>
 <DefaultData>ParameterDefaultData</DefaultData>
-<IdLocation>^UA.ParameterD</IdLocation>
-<IndexLocation>^UA.ParameterI</IndexLocation>
-<StreamLocation>^UA.ParameterS</StreamLocation>
+<IdLocation>^BG.ParameterD</IdLocation>
+<IndexLocation>^BG.ParameterI</IndexLocation>
+<StreamLocation>^BG.ParameterS</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 

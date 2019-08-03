@@ -2,6 +2,26 @@
 <Export generator="Cache">
 <Global>
 <Node><Sub>^DeepSee.TermList</Sub>
+<Node><Sub>BG SOURCES</Sub>
+<Node><Sub>data</Sub>
+<Node><Sub>Area</Sub>
+<Node><Sub>VALUE</Sub>
+<Data>BG/Area Map.pivot</Data>
+</Node>
+</Node>
+<Node><Sub>Population</Sub>
+<Node><Sub>VALUE</Sub>
+<Data>BG/Population Map.pivot</Data>
+</Node>
+</Node>
+</Node>
+<Node><Sub>modDate</Sub>
+<Data>2019-08-03 13:02:33</Data>
+</Node>
+<Node><Sub>name</Sub>
+<Data>BG Sources</Data>
+</Node>
+</Node>
 <Node><Sub>ELECTION VOTES</Sub>
 <Node><Sub>data</Sub>
 <Node><Sub>Votes Temperature</Sub>

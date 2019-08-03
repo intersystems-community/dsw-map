@@ -37,7 +37,7 @@ Storage Default
 <IdLocation>^RF.SAKH.RegionD</IdLocation>
 <IndexLocation>^RF.SAKH.RegionI</IndexLocation>
 <StreamLocation>^RF.SAKH.RegionS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

@@ -30,7 +30,7 @@ Storage Default
 <IdLocation>^RF.KHAB.RegionD</IdLocation>
 <IndexLocation>^RF.KHAB.RegionI</IndexLocation>
 <StreamLocation>^RF.KHAB.RegionS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

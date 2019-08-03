@@ -35,7 +35,7 @@ Storage Default
 <IdLocation>^USA.ElectionsD</IdLocation>
 <IndexLocation>^USA.ElectionsI</IndexLocation>
 <StreamLocation>^USA.ElectionsS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

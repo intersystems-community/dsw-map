@@ -1,4 +1,4 @@
-Class CZ.ParameterValue Extends (%Persistent, %XML.Adaptor)
+Class BG.ParameterValue Extends (%Persistent, %XML.Adaptor)
 {
 
 Relationship Region As Area(XMLPROJECTION = "XELEMENT", XMLREFERENCE = "ID") [ Cardinality = one, Inverse = Parameters ];
@@ -30,11 +30,11 @@ Storage Default
 <Value>Value</Value>
 </Value>
 </Data>
-<DataLocation>^CZ.ParameterValueD</DataLocation>
+<DataLocation>^BG.ParameterValueD</DataLocation>
 <DefaultData>ParameterValueDefaultData</DefaultData>
-<IdLocation>^CZ.ParameterValueD</IdLocation>
-<IndexLocation>^CZ.ParameterValueI</IndexLocation>
-<StreamLocation>^CZ.ParameterValueS</StreamLocation>
+<IdLocation>^BG.ParameterValueD</IdLocation>
+<IndexLocation>^BG.ParameterValueI</IndexLocation>
+<StreamLocation>^BG.ParameterValueS</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 

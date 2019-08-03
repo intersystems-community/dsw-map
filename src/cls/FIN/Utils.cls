@@ -77,7 +77,7 @@ Storage Default
 <IdLocation>^FIN.UtilsD</IdLocation>
 <IndexLocation>^FIN.UtilsI</IndexLocation>
 <StreamLocation>^FIN.UtilsS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 XData RegionXData

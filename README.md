@@ -24,4 +24,5 @@ Or run following to setup special map only:
     d ##class([MapName].Utils).Setup()
 ```
 3. Download [polygons.zip](https://github.com/intersystems-ru/dsw-map/releases/) and place polygons files in /csp/yourtargetnamespace.
-4. Open yourserver/dsw/ in a target namespace and get the maps.
+4. Download [TermList.xml] and impot it into target Namespace
+5. Open yourserver/dsw/ in a target namespace and get the maps.
