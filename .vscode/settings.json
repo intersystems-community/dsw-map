@@ -9,7 +9,9 @@
       "docker-compose": {
         "service": "iris",
         "internalPort": 52773
-      }
+      },
+      "username": "_SYSTEM",
+      "password": "SYS"
     }
 
 }
