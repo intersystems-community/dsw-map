@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="dsw-map.ZPM">
+    <Module>
+      <Name>dsw-map</Name>
+      <Version>1.0.0</Version>
+      <Description>Provides sample data for use with InterSystems IRIS Business Intelligence, as well as fully developed sample BI models and dashboards.</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="BG.PKG"/>
+      <Resource Name="DSWMap.PKG"/>
+      <Resource Name="CZ.PKG"/>
+      <Resource Name="FIN.PKG"/>
+      <Resource Name="KZ.PKG"/>
+      <Resource Name="RF.PKG"/>
+      <Resource Name="RSA.PKG"/>
+      <Resource Name="SE.PKG"/>
+      <Resource Name="UA.PKG"/>
+      <Resource Name="UA21.PKG"/>
+      <Resource Name="UK.PKG"/>
+      <Resource Name="USA.PKG"/>
+      <Resource Name="World.PKG"/>
+      <Resource Name="DeepSee.TermList.GBL"/>
+      <Resource Name="*.DFI" />
+      <Invokes>
+      <Invoke Class="DSWMap.Utils" Method="EnableAnalytics"></Invoke>
+      <Invoke Class="DSWMap.Utils" Method="SetupAll"></Invoke>
+
+      </Invokes>
+    <Parameter Name="folder" Value="user" />
+    <FileCopy Name="/src/js/" Target="${cspdir}${folder}/"/>
+    </Module>
+    
+  </Document>
+</Export>

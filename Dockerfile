@@ -1,37 +1,31 @@
-ARG IMAGE=store/intersystems/irishealth:2019.3.0.308.0-community
-ARG IMAGE=store/intersystems/iris-community:2019.3.0.309.0
-ARG IMAGE=store/intersystems/iris-community:2019.4.0.379.0
-ARG IMAGE=store/intersystems/iris-community:2020.1.0.199.0
+ARG IMAGE=intersystemsdc/irishealth-community:2020.3.0.200.0-zpm
+ARG IMAGE=intersystemsdc/iris-community:2020.4.0.547.0-zpm
+ARG IMAGE=containers.intersystems.com/intersystems/iris:2021.1.0.215.0
 ARG IMAGE=intersystemsdc/iris-community
 FROM $IMAGE
 
-USER root
+WORKDIR /home/irisowner/irisbuild
 
-WORKDIR /opt/irisapp
-RUN chown ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisapp
-COPY irissession.sh /
-RUN chmod +x /irissession.sh 
+## install git
+## USER root   
+##RUN apt update && apt-get -y install git
+##USER ${ISC_PACKAGE_MGRUSER}
 
+ARG TESTS=0
+ARG MODULE="dsw-map"
+ARG NAMESPACE="IRISAPP"
 
-USER irisowner
-
-COPY  Installer.cls .
-COPY  src/cls src
-COPY  src/dfi src
-COPY  src/gbl src
-COPY  src/js /usr/irissys/csp/irisapp
-SHELL ["/irissession.sh"]
-
-RUN \
-  do $SYSTEM.OBJ.Load("Installer.cls", "ck") \
-  zpm "install dsw" \
-  zpm "install isc-dev" \
-  set sc = ##class(App.Installer).setup() \
-  zn "IRISAPP" \
-  zpm "install mdx2json" \
-  do ##class(DSWMap.Utils).EnableAnalytics() \
-  do ##class(USA.Utils).Setup()
+## Embedded Python environment
+ENV IRISUSERNAME "_SYSTEM"
+ENV IRISPASSWORD "SYS"
+ENV IRISNAMESPACE $NAMESPACE
+ENV PYTHON_PATH=/usr/irissys/bin/
+ENV PATH "/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin"
 
 
-# bringing the standard shell back
-SHELL ["/bin/bash", "-c"]
+RUN --mount=type=bind,src=.,dst=. \
+    #pip3 install -r requirements.txt && \
+    iris start IRIS && \
+	iris session IRIS < iris.script && \
+    ([ $TESTS -eq 0 ] || iris session iris -U $NAMESPACE "##class(%ZPM.PackageManager).Shell(\"test $MODULE -v -only\",1,1)") && \
+    iris stop IRIS quietly
