@@ -9,6 +9,7 @@
     <control name="" action="applyFilter" target="" targetProperty="[Region].[H1].[Region]" location="widget" type="auto" controlClass="" label="Region" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
       <valueRequired>false</valueRequired>
     </control>
+    <dataProperty name="colorProperty" label="colorProperty" width="" align="" subtype="" style="" display="value" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="ColorHSLValue" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
   </widget>
   <widget name="w2" type="pivot" subtype="donutChart" subtypeClass="pieChart" title="" dataSource="" dataLink="khvpolygons" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="4" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
   </widget>

@@ -6,6 +6,7 @@
     <property name="latitude">63.489229</property>
     <property name="longitude">16.235400</property>
     <property name="zoom">4</property>
+    <dataProperty name="colorProperty" label="colorProperty" width="" align="" subtype="" style="" display="value" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="ColorHSLValue" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
   </widget>
   <widget name="w1" type="pivot" subtype="pivot" subtypeClass="lineChart" title="" dataSource="" dataLink="sepolygons" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="4" homeColL="0" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
   </widget>
