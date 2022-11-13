@@ -3,7 +3,7 @@
   <Document name="dsw-map.ZPM">
     <Module>
       <Name>dsw-map</Name>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <Description>Provides sample data for use with InterSystems IRIS Business Intelligence, as well as fully developed sample BI models and dashboards.</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
