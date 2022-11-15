@@ -8,8 +8,8 @@ on:
 
 env:
   # Change this section according to your needs
-  IMAGE_NAME:   pie-chart-bug
-  SERVICE:      pie-chart-bug
+  IMAGE_NAME:   dsw-map
+  SERVICE:      dsw-map
   DOMAIN_NAME:  dsw-map.demo.community.intersystems.com
 
   # Leave this section untouched
