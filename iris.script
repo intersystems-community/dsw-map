@@ -7,6 +7,16 @@
     set prop("Enabled")=1
     set prop("AutheEnabled")=48
     do ##class(Security.Services).Modify("%Service_CallIn",.prop)
+    
+    // load all the code of the project as a ZPM package
+    zn "USER"
+    zpm "install isc-dev"
+    zpm "install dsw"
+    
+    do ##class(dev.code).workdir("/irisrun/repo/src")
+
+    zpm "load /home/irisowner/irisbuild/ -v":1:1
+    zn "%SYS"
     write "Modifying MDX2JSON application security...",! 
     set webName = "/mdx2json" 
     set webProperties("AutheEnabled") = 64 
@@ -15,11 +25,4 @@
     if sc<1 write $SYSTEM.OBJ.DisplayError(sc) 
 
 
-    // load all the code of the project as a ZPM package
-    zn "USER"
-    zpm "install isc-dev"
-    zpm "install dsw"
-    do ##class(dev.code).workdir("/irisrun/repo/src")
-
-    zpm "load /home/irisowner/irisbuild/ -v":1:1
     halt

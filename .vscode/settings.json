@@ -15,7 +15,7 @@
       "password": "SYS",
       "links": {
         "SAMPLES BI in ZEN": "http://localhost:${port}/csp/irisapp/_DeepSee.UserPortal.DashboardViewer.zen",
-        "SAMPLES BI in DSW": "http://localhost:${port}/dsw/index.html#/IRISAPP"
+        "SAMPLES BI in DSW": "http://localhost:${port}/dsw/index.html#/USER"
       }
     }
     
