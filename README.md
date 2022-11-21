@@ -5,12 +5,21 @@
 
 map examples of different regions to render in DeepSeeWeb
 
+[Online demo](https://dswmap.demo.community.intersystems.com/dsw/index.html#/login?from=%2FUSER)
+
 Non issue
 -----------
 If you are using the local host as the server, then replace **localhost** with IP **127.0.0.1** to avoid an error.
 
 Installation
 -----------
+
+ZPM
+-----------
+
+USER>zpm "install dsw-map"
+
+
 
 0. Be sure you have [MDX2JSON](https://github.com/intersystems-ru/Cache-MDX2JSON) and [DeepSeeWeb](https://github.com/intersystems-ru/DeepSeeWeb) installed.
 
