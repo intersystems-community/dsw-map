@@ -11,5 +11,4 @@ services:
       - 52773
       - 53773
     volumes:
-      - ~/iris.key:/usr/irissys/mgr/iris.key
-      - ./:/irisdev/app
+      - ./:/home/irisowner/irisdev/

@@ -4,7 +4,7 @@ ARG IMAGE=containers.intersystems.com/intersystems/iris:2021.1.0.215.0
 ARG IMAGE=intersystemsdc/iris-community
 FROM $IMAGE
 
-WORKDIR /home/irisowner/irisbuild
+WORKDIR /home/irisowner/irisdev/
 
 ## install git
 ## USER root   

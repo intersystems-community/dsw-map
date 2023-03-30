@@ -13,6 +13,7 @@
       <valueRequired>false</valueRequired>
     </control>
     <dataProperty name="colorProperty" label="colorProperty" width="" align="" subtype="" style="" display="value" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="ColorHSLValue" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
+    <dataProperty name="" label="" width="" align="" subtype="" style="" display="" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="Key" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
   </widget>
   <widget name="Widget2" type="pivot" subtype="pivot" subtypeClass="lineChart" title="" dataSource="" dataLink="uspolygons" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="6" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
   </widget>
