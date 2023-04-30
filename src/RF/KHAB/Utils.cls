@@ -4,16 +4,16 @@ Class RF.KHAB.Utils
 ClassMethod Setup() As %Status
 {
 	set sc = ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("KHABCube")
+	do ##class(%DeepSee.Utils).%BuildCube("KHABCube",0)
 	quit sc
 }
 
 ClassMethod Populate() As %Status
 {
 	set (sc1, sc2) = $$$OK
-	
+
 	set sc1 = ##class(RF.KHAB.Region).%KillExtent()
-	
+
 	set ^regions("Аяно-Майский район") = 1971
 	set ^regions("Охотский район") = 6717
 	set ^regions("Тугуро-Чумиканский район") = 1972
@@ -33,7 +33,7 @@ ClassMethod Populate() As %Status
 	set ^regions("Нанайский район") = 16332
 	set ^regions("Советско-Гаванский район") = 40051
 	set ^regions("Хабаровск") = 611160
-	
+
 	set key = $order(^regions(""))
 	while (key '= "") {
 		set obj = ##class(Region).%New()
@@ -41,12 +41,11 @@ ClassMethod Populate() As %Status
 		set obj.Name = key
 		set obj.Population = ^regions(key)
 		set sc2 = obj.%Save()
-		
+
 		set key = $order(^regions(key))
 	}
-	
+
 	quit $$$ADDSC(sc1, sc2)
 }
 
 }
-

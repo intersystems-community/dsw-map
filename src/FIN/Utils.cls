@@ -4,7 +4,7 @@ Class FIN.Utils
 ClassMethod Setup()
 {
 	do ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("FinCube")
+	do ##class(%DeepSee.Utils).%BuildCube("FinCube",0)
 }
 
 ClassMethod Populate()
@@ -5762,4 +5762,3 @@ XData ParameterXData
 }
 
 }
-

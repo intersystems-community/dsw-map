@@ -4,7 +4,7 @@ Class CZ.Utils
 ClassMethod Setup()
 {
 	do ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("CZCube")
+	do ##class(%DeepSee.Utils).%BuildCube("CZCube",0)
 }
 
 ClassMethod Populate() As %Status
@@ -64,7 +64,7 @@ ClassMethod ImportXData(className As %String, xDataName As %String) As %Status
 	}
 
 	write !,"Import - "_itemsCount_" objects of class "_className
-	
+
 	Quit $$$OK
 }
 
@@ -1536,4 +1536,3 @@ XData ParameterXData
 }
 
 }
-
