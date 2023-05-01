@@ -5,14 +5,14 @@ Class UA21.Utils
 ClassMethod Setup()
 {
 	do ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("UA21Cube")
+	do ##class(%DeepSee.Utils).%BuildCube("UA21Cube",0)
 }
 
 ClassMethod Populate() As %Status
 {
 	do ##class(UA21.Region).%KillExtent()
 	do ##class(UA21.District).%KillExtent()
-	
+
 	set sql = "CALL %SQL_Util.CSV(,,?,?)"
 
 	set proc = ##class(%SQL.Statement).%ExecDirect(,sql, ..GetXData(,"Regions"), $c(9))
@@ -31,7 +31,7 @@ ClassMethod Populate() As %Status
 		do:rs.region'="" obj.regionSetObjectId(##class(Region).getId(rs.region))
 		$$$TOE(sc, obj.%Save())
 	}
-	
+
 	kill stream, stream3
 
 	quit $$$OK
@@ -40,12 +40,12 @@ ClassMethod Populate() As %Status
 ClassMethod GetXData(class = {$classname()}, xData) As %Stream.FileCharacter
 {
 	set stream = ##class(%Dictionary.XDataDefinition).IDKEYOpen(class, xData).Data
-	
+
 	set stream2 = ##class(%Stream.FileCharacter).%New()
 	set stream2.TranslateTable = "UTF8"
 	do stream2.CopyFrom(stream)
 	kill stream
-	
+
 	quit stream2
 }
 
