@@ -4,7 +4,7 @@ Class RSA.Utils
 ClassMethod Setup()
 {
 	do ..Populate()
-	do ##class(%DeepSee.Utils).%BuildCube("RSACube")
+	do ##class(%DeepSee.Utils).%BuildCube("RSACube",0)
 }
 
 ClassMethod Populate() As %Status
@@ -64,7 +64,7 @@ ClassMethod ImportXData(className As %String, xDataName As %String) As %Status
 	}
 
 	write !,"Import - "_itemsCount_" objects of class "_className
-	
+
 	Quit $$$OK
 }
 
@@ -1061,4 +1061,3 @@ XData ParameterXData
 }
 
 }
-
