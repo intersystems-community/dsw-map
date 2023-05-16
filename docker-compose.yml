@@ -12,4 +12,3 @@ services:
       - 53773
     volumes:
       - ./:/home/irisowner/irisdev/
-    working_dir: /home/irisowner
