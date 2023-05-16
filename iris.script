@@ -15,7 +15,7 @@
     
     do ##class(dev.code).workdir("/home/irisowner/irisdev/src")
 
-    zpm "load /home/irisowner/irisdev/ -v":1:1
+    zpm "load /home/irisowner/irisdev/ -v":1
     zn "%SYS"
     zpm "install passwordless"
     #; write "Modifying MDX2JSON application security...",! 
