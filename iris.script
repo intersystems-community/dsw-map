@@ -10,8 +10,8 @@
     
     // load all the code of the project as a ZPM package
     zn "USER"
-    zpm "install isc-dev"
-    zpm "install dsw"
+    ;zpm "install isc-dev"
+    ;zpm "install dsw"
     
     do ##class(dev.code).workdir("/home/irisowner/irisdev/src")
 
