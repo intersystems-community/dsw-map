@@ -27,10 +27,6 @@
         <Name>dsw</Name>
         <Version>3.1.*</Version>
        </ModuleReference>
-       <ModuleReference>
-        <Name>isc-dev</Name>
-        <Version>1.4.*</Version>
-       </ModuleReference>
       </Dependencies>
       <Invokes>
       <Invoke Class="DSWMap.Utils" Method="EnableAnalytics"></Invoke>
