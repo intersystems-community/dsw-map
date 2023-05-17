@@ -22,10 +22,19 @@
       <Resource Name="World.PKG"/>
       <Resource Name="DeepSee.TermList.GBL"/>
       <Resource Name="*.DFI" />
+      <Dependencies>
+       <ModuleReference>
+        <Name>dsw</Name>
+        <Version>3.1.*</Version>
+       </ModuleReference>
+       <ModuleReference>
+        <Name>isc-dev</Name>
+        <Version>1.4.*</Version>
+       </ModuleReference>
+      </Dependencies>
       <Invokes>
       <Invoke Class="DSWMap.Utils" Method="EnableAnalytics"></Invoke>
       <Invoke Class="DSWMap.Utils" Method="SetupAll"></Invoke>
-
       </Invokes>
     <Parameter Name="folder" Value="user" />
     <FileCopy Name="/src/js/" Target="${cspdir}${folder}/"/>
