@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache">
+<Document name="ID-Map of Indonesia.dashboard.DFI">
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="Map of Indonesia" folderName="ID" title="Map of Indonesia" description="" keywords="" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2018-05-13T20:42:33.144Z" createdBy="_SYSTEM" category="" bookCover="" scheme="" worklistCount="2" snapTo="true" snapGrid="true" gridRows="10" gridCols="10" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="idpolygons" type="map" subtype="map" subtypeClass="" title="" dataSource="ID/Population Map.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="6" rowSpanL="8" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="applyFilter" target="Виджет2" targetProperty="[ParentRegion].[H1].[Region]" location="click" type="auto" controlClass="" label="District" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <dataProperty name="colorProperty" label="colorProperty" width="" align="" subtype="" style="" display="value" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="ColorHSLValue" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
+    <dataProperty name="" label="" width="" align="" subtype="" style="" display="" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="Key" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
+    <property name="latitude">0.7893</property>
+    <property name="longitude">113.9213</property>
+    <property name="zoom">4</property>
+  </widget>
+  <widget name="Виджет2" type="pivot" subtype="pivot" subtypeClass="lineChart" title="" dataSource="ID/Population Map Mini Dist.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="6" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+  </widget>
+  <widget name="Виджет3" type="pivot" subtype="pieChart" subtypeClass="pieChart" title="" dataSource="" dataLink="Виджет2" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="4" homeColL="6" colSpanL="4" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+  </widget>
+</dashboard>
+</Document></Export>
