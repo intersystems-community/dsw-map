@@ -3,7 +3,7 @@
   <Document name="dsw-map.ZPM">
     <Module>
       <Name>dsw-map</Name>
-      <Version>1.0.13</Version>
+      <Version>1.0.14</Version>
       <Description>Provides sample data for use with InterSystems IRIS Business Intelligence, as well as fully developed sample BI models and dashboards.</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
@@ -12,6 +12,7 @@
       <Resource Name="CZ.PKG"/>
       <Resource Name="FIN.PKG"/>
       <Resource Name="KZ.PKG"/>
+      <Resource Name="ID.PKG"/>
       <Resource Name="RF.PKG"/>
       <Resource Name="RSA.PKG"/>
       <Resource Name="SE.PKG"/>
@@ -25,7 +26,7 @@
       <Dependencies>
        <ModuleReference>
         <Name>dsw</Name>
-        <Version>3.1.*</Version>
+        <Version>3.2.*</Version>
        </ModuleReference>
       </Dependencies>
       <Invokes>
