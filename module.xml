@@ -26,7 +26,7 @@
       <Dependencies>
        <ModuleReference>
         <Name>dsw</Name>
-        <Version>3.2.*</Version>
+        <Version>4.*.*</Version>
        </ModuleReference>
       </Dependencies>
       <Invokes>
