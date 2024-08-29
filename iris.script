@@ -22,12 +22,7 @@
     zpm "load /home/irisowner/irisdev/ -v":1
     zn "%SYS"
     zpm "install passwordless"
-    #; write "Modifying MDX2JSON application security...",!
-    #; set webName = "/mdx2json"
-    #; set webProperties("AutheEnabled") = 64
-    #; set webProperties("MatchRoles")=":%DB_USER"
-    #; set sc = ##class(Security.Applications).Modify(webName, .webProperties)
-    #; if sc<1 write $SYSTEM.OBJ.DisplayError(sc)
+
 
 
     halt

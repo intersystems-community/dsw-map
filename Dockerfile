@@ -1,13 +1,13 @@
 ARG IMAGE=intersystemsdc/irishealth-community:2020.3.0.200.0-zpm
 ARG IMAGE=intersystemsdc/iris-community:2020.4.0.547.0-zpm
 ARG IMAGE=containers.intersystems.com/intersystems/iris:2021.1.0.215.0
-ARG IMAGE=intersystemsdc/iris-community
+ARG IMAGE=intersystemsdc/iris-community:2024.1-zpm
 FROM $IMAGE
 
 WORKDIR /home/irisowner/irisdev/
 
 ## install git
-## USER root   
+## USER root
 ##RUN apt update && apt-get -y install git
 ##USER ${ISC_PACKAGE_MGRUSER}
 
