@@ -40,6 +40,9 @@ docker compose exec iris iris session iris -U USER
 ### Clear docker fs
 ```
 docker system prune -f
+
+docker system prune -a
+docker rm -f $(docker ps -qa)
 ```
 
 ### Open SQL shell
